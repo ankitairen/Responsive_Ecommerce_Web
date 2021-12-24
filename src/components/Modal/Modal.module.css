@@ -1,0 +1,99 @@
+.Container {
+  position: fixed;
+  top: 0;
+  left: 10%;
+  width: 80%;
+  height: 550px;
+  z-index: 500;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-rows: minmax(80vh, 1fr);
+  margin: 5rem 2rem 2rem 2rem;
+  background-color: #ffffff;
+  background: #ffffff;
+  font-family: "Rasa", serif;
+}
+
+.Backdrop {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 400;
+}
+
+.ImgContainer {
+  margin-top: 2rem;
+  object-fit: cover;
+  height: 500px;
+  overflow: hidden;
+  justify-self: center;
+}
+
+.Img {
+  display: inline-block;
+  max-width: 400px;
+  max-height: 500px;
+}
+
+.InfoContainer {
+  font-family: "Rasa", serif;
+  color: #00344b;
+  margin: 2rem;
+}
+
+.Title {
+  font-size: 2rem;
+  margin: auto;
+}
+
+.BtnContainer {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.BackButton,
+.CartBtn {
+  color: #00344b;
+  border: 2px solid #414141;
+  width: 10rem;
+  padding: 0.5rem 0.5rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+  background: transparent;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  outline: none;
+}
+
+.BackButton:hover,
+.CartBtn:hover {
+  background: #00344b;
+  color: white;
+}
+
+.CartBtnDisable {
+  color: #00344b;
+  border: 2px solid #414141;
+  width: 10rem;
+  padding: auto 0.5rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+@media (max-width: 800px) {
+  .Container {
+    height: 700px;
+    overflow: auto;
+  }
+
+  .ImgContainer {
+    height: auto;
+  }
+}

@@ -1,0 +1,20 @@
+.Navbar {
+  position: sticky;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  height: 60px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.Navigation {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 2rem;
+}
+
+.Logo {
+  margin-left: 0.5rem;
+}
